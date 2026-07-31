@@ -2,7 +2,7 @@ import os
 import json
 from groq import Groq
 
-from queryLens.config import GROQ_MODEL
+from config import GROQ_MODEL
 
 _client = None
 

@@ -1,0 +1,186 @@
+{
+  "exact_match_rate": 0.0,
+  "near_match_rate": 0.05,
+  "per_query": [
+    {
+      "query": "How does RRF combine results from different rankers?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What makes cross-encoders more accurate than comparing two separate embeddings?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "Explain how keyword frequency scoring works in sparse search",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How do neural embeddings enable similarity search between text?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How are real-world facts represented so a system can traverse them?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What is late chunking and why keep document-level context in each chunk?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How does parent-child chunking balance precise matching with full context?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How do you check if a generated answer is actually grounded in what was retrieved?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What metric caps answer quality based on how much needed info was retrieved?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "Why would a system generate a fake answer before embedding a search query?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How does rephrasing one question into several versions help retrieval?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What is the benefit of asking a broader question before the specific one?",
+      "routed_to": "hyde",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 1.0,
+      "exact_match": false,
+      "near_match": true
+    },
+    {
+      "query": "How does a system decide which retrieval approach to use for a given question?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How do you split text based on topic shifts instead of a fixed length?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What step connects a mentioned name to a node in a graph?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What tradeoff do fast approximate vector search methods make?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How do you measure whether a generated answer stays on topic?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "What is the simplest way to break a document into pieces?",
+      "routed_to": "direct",
+      "best_strategy": "baseline",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How can questions requiring multiple connected facts be answered?",
+      "routed_to": "direct",
+      "best_strategy": "step_back",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    },
+    {
+      "query": "How can a piece of text's embedding reflect the context around it?",
+      "routed_to": "direct",
+      "best_strategy": "hyde",
+      "best_mrr": 1.0,
+      "routed_mrr": 0.0,
+      "exact_match": false,
+      "near_match": false
+    }
+  ]
+}

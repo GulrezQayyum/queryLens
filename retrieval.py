@@ -9,8 +9,8 @@ _collection = None
 def _get_model():
     global _model
     if _model is None:
-        _model =SentenceTransformer(EMBED_MODEL)
-        return _model
+        _model = SentenceTransformer(EMBED_MODEL)
+    return _model  # <--- Moved this OUTSIDE the if block
     
 def _get_collection():
     global _collection
@@ -37,8 +37,10 @@ def reciprocal_rank_fusion(ranked_list: list[list[dict]], k: int = RRF_K, top_k:
     scores: dict[str, float] = {}
     doc_lookup: dict[str, dict] = {}
     
+    # Iterate through each ranked list (from each variant)
     for ranked in ranked_list:
-        for rank, item in enumerate(ranked_list):
+        # Iterate through the items within this specific list
+        for rank, item in enumerate(ranked):  # <--- CHANGE: use 'ranked' here, not 'ranked_list'
             doc_id = item["id"]
             scores[doc_id] = scores.get(doc_id, 0.0) + 1.0 / (k + rank + 1)
             doc_lookup[doc_id] = item
@@ -49,4 +51,3 @@ def reciprocal_rank_fusion(ranked_list: list[list[dict]], k: int = RRF_K, top_k:
         for doc_id in fused_ids[:top_k]
     ]
     return fused
-        
